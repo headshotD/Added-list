@@ -11,20 +11,34 @@ public class HomeWorkOfArrays {
         foundElement.add("Python");
         foundElement.add("C#");
         foundElement.add("C++");
-        System.out.println(foundElement.contains("Python"));
-        System.out.println(foundElement.contains("Java"));
+        for (int i = 0; i < 1; i++) {
+            System.out.println("Python:  " + foundElement.contains("Python"));
+            System.out.println("RandomValue: " + foundElement.contains("NNN"));
+        }
 
         List<String> addElement = new ArrayList<>();
         addElement.add("ElementOne");
         addElement.add("ElementTwo");
         addElement.add("ElementThree");
-        System.out.println(addElement);
-        System.out.println(addElement.toArray().length);
-        addElement.add ("Kek");
-        System.out.println(addElement);
-        System.out.println(addElement.toArray().length);
-        addElement.remove("Kek");
-        System.out.println(addElement);
-        System.out.println(addElement.toArray().length);
+        for (int i = 0; i < 1; i++) {
+            addElement.add("Kek");
+            if (addElement.contains("Kek")) {
+                System.out.println("Welcome new element: " + addElement.getLast());
+                System.out.println("You array lenght is: " + addElement.toArray().length);
+            } else {
+                System.out.println("Kek not found");
+            }
+        }
+
+        for (int i = 0; i < 1; i++) {
+            addElement.remove("ElementThree");
+            if (addElement.contains("ElementTwo")) {
+                System.out.println("Remove element: " + addElement);
+                System.out.println("You array lenght is: " + addElement.toArray().length);
+            } else {
+                System.out.println("ElementThree not remove");
+            }
+
+        }
     }
 }
