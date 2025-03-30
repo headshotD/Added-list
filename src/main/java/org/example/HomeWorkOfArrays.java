@@ -33,7 +33,7 @@ public class HomeWorkOfArrays {
         for (int i = 0; i < 1; i++) {
             addElement.remove("ElementThree");
             if (addElement.contains("ElementTwo")) {
-                System.out.println("Remove element: " + addElement);
+                System.out.println("You have element: " + addElement);
                 System.out.println("You array lenght is: " + addElement.toArray().length);
             } else {
                 System.out.println("ElementThree not remove");
